@@ -1,0 +1,608 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quiche Normal';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Quiche Bold';
+    src: url('assets/fonts/Demo_Fonts/Fontspring-DEMO-quichesans-black.otf');
+}
+
+@font-face {
+    font-family: 'Quiche Normal';
+    src: url('assets/fonts/Demo_Fonts/Fontspring-DEMO-quichesans-regular.otf');
+}
+
+@font-face {
+    font-family: 'Engravers Gothic';
+    src: url('assets/fonts/engravers-gothic-bt.ttf');
+}
+
+header{
+    display: flex;
+}
+.left-side, .right-side{
+    flex:1;
+    position: relative;
+}
+header .left-side::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-image: url('assets/imgs/img-background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+}
+
+header .left-side{
+    display: flex;
+    align-items: center;
+}
+
+.content-left-side{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: 3rem auto;
+    padding: 0 3.5rem;
+}
+
+.logo-area{
+    max-width: 30rem;
+}
+
+.logo-area img{
+    width: 100%;
+}
+
+.title h1{
+    font-size: 3.3rem;
+    color: #1b1b1b;
+    letter-spacing: 1px;
+}
+.title, .description{
+    margin: 1rem 0;
+}
+.description p{
+    font-size: 1.8rem;
+    color: #3d3d3d;
+    line-height: 2.4rem;
+}
+.btn-area{
+    margin: 1rem 0 0 0;
+}
+
+.btn-action{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, #7c7975, #c2beb8) ;
+    padding: 1.3rem 2em;
+    font-family: 'Quiche Bold';
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+header .right-side{
+    background-image: radial-gradient(#e2c083, white);
+}
+
+.grid-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .3rem;
+    height: 100%;
+}
+
+.photo{
+    height: 100%;
+    width: 100%;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.max-width{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.section-two{
+    background-color: #dddad4;
+    padding: 8rem 3.5rem;
+}
+
+.section-two-area{
+    display: flex;
+    gap: 2rem;
+}
+
+.section-two-area .left-side{
+    width: inherit;
+}
+
+.section-two-area .left-side img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.section-two-area .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-two-area .right-side h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-two-area .right-side p{
+    font-size: 1.7rem;
+    color: rgb(95, 95, 95);
+    margin-bottom: 1.5rem;
+    word-spacing: 2px;
+}
+
+/* SECTION THREE */
+
+.section-three{
+    background-image: linear-gradient(#dddad4 40%, #f1f1f1 30%, #f1f1f1 65%);
+    padding: 0 3.5rem;
+}
+
+.boxes{
+    display: flex;
+}
+
+.box{
+    flex: 1;
+    background-color: white;
+}
+
+.boxes .box:nth-child(1){
+    border-radius: 10px 0 0 10px;
+    box-shadow: 5px 0px 10px #dcdcdc;
+    z-index: 99;
+}
+
+.boxes .box:nth-child(2){
+    background-color: #f7f7f7;
+}
+
+.boxes .box:nth-child(3){
+    border-radius: 0 10px 10px 0;
+    box-shadow: -5px 0px 10px #dcdcdc;
+}
+
+.box .img-area{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.box .img-area img{
+    width: 6rem;
+    color: rgb(233, 233, 233);
+}
+
+.box .description-box,
+.box-four .description{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+    color: rgb(131, 131, 131);
+    line-height: 2.4rem;
+}
+
+/* SECTION FOUR */
+
+.section-four{
+    padding: 10rem 3.5rem;
+    background-color: #f1f1f1;
+}
+
+.section-four h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0 0 3.5rem 0;
+    color: rgb(45, 45, 45);
+}
+
+.boxes-section-four{
+    display: flex;
+}
+
+.box-four{
+    flex: 1;
+}
+
+.boxes-section-four .box-four:nth-child(1),
+.boxes-section-four .box-four:nth-child(2){
+    border-right: 1px solid rgb(131, 131, 131);
+}
+
+.box-four{
+    flex: 1;
+}
+.box-four h2{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(50, 50, 50);
+}
+
+/* LINHA DO TEMPO SECTION */
+
+.section-fifth{
+    margin: 0 0 15rem 0;
+}
+
+.top-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#f1f1f1 20%, #fff 20%, #fff 65%);
+    padding: 0 2rem;
+}
+
+.photo-side{
+    max-width: 400px;
+}
+
+.photo-side img{
+    width: 100%;
+    border-radius: 150px 0 150px 0;
+}
+
+.top-side .content-side{
+    background-color: white;
+    height: max-content;
+    max-width: 500px;
+    padding: 2rem 4rem 7rem 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 3px 0 5px rgb(227, 227, 227);
+    border-radius: 0 10px 10px 0;
+}
+
+.top-side .content-side h2{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;    
+    font-size: 2.7rem;
+    color: rgb(31, 31, 31);
+}
+.top-side .content-side h2 img{
+    width: 25px;
+}
+
+.top-side .content-side p{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: rgb(131, 131, 131);
+}
+
+.timeline-side{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1140px;
+    margin: 3rem auto 4rem auto;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.timeline .boxline p{
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.timeline .boxline .img-area{
+    background-color: white;
+    width: max-content;
+    border-radius: 50%;
+    padding: 1.4rem;
+    border: 1px solid rgb(131, 131, 131);
+}
+
+.timeline .boxline img{
+    width: 50px;
+}
+
+.timeline .box-description{
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgb(131, 131, 131);
+    margin-top: 1rem;
+}
+
+.linha{
+    width: calc(100vw - 17px);
+    height: 3px;
+    background-color: rgb(131, 131, 131);
+    position: absolute;
+    top: 39%;
+    z-index: -99;
+}
+
+/* SECTION SIX */
+
+.section-six{
+    background-image: none;
+    background-color: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+    padding: 0 2rem 4rem 2rem;
+}
+
+.title-three-copy{
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 4rem 0;
+}
+
+.section-six .box h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.logo-background{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-background img{
+    width: 300px;
+    opacity: .5;
+}
+
+.section-six h2:nth-child(3){
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 8rem 0 3rem 0;
+}
+
+.bottom-side{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.side i{
+    font-size: 2.8rem;
+    color: rgb(49, 49, 49);
+}
+
+.side span{
+    font-size: 1.6rem;
+    color: rgb(96, 96, 96);
+    margin-left: 1rem;
+}
+
+.section-six .btn-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+footer{
+    background-color: rgb(221, 218, 212);
+    padding: 4rem 2rem;
+}
+
+.title-footer{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content-area{
+    display: flex;
+    gap: 2rem;
+}
+
+.mapa-area{
+    flex: 1;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mapa-area iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.details-area{
+    max-width: 500px;
+    width: 100%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.details h2{
+    font-size: 2.4rem;
+}
+
+.details p{
+    font-size: 1.6rem;
+    color: rgb(131, 131, 131);
+}
+
+.socials-area{
+    display: flex;
+    gap: 1rem;
+}
+
+.social{
+    background-color:#353434;
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.social i{
+    font-size: 3.4rem;
+    color: white;
+}
+
+.details-area .btn-area{
+    display: flex;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1440px){
+    html{
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 425px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo-area{
+        margin: auto;
+    }
+    header .right-side{
+        background-image: none;
+    }
+    .grid-photos{
+        padding: 0 3.5rem;
+    }
+    .section-two{
+        padding: 8rem 3.5rem 5rem 3.5rem;
+    }
+    .section-two-area,
+    .boxes-section-four{
+        flex-direction: column;
+    }
+    .section-two-area .right-side h1,
+    .section-two-area .right-side p{
+        text-align: center;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    .boxes .box:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .boxes .box:nth-child(3){
+        border-radius: 0 0 10px 10px;
+    }
+
+    .boxes-section-four .box-four:nth-child(1),
+    .boxes-section-four .box-four:nth-child(2){
+        border-bottom: 1px solid rgb(131, 131, 131);
+        border-right: none;
+    }
+
+    .boxes-section-four .box-four:nth-child(2){
+        margin: 2rem 0;
+        padding-bottom: .4rem;
+    }
+
+    .box-four .description{
+        padding: 0;
+    }
+
+    .top-side{
+        flex-direction: column;
+    }
+
+    .top-side .content-side{
+        padding: 3rem 4rem;
+    }
+
+    .top-side .content-side h2{
+        font-size: 2.3rem;
+    }
+    .linha{
+        display: none;
+    }
+
+    .timeline-side{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 0 3rem;
+    }
+
+    .timeline .box-description{
+        margin-top: 1.5rem;
+    }
+
+    .bottom-side{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo-background{
+        position: absolute;
+        top: 12%;
+        right: -20px;
+        transform: translateY(-50%);
+    }
+    
+    .logo-background img{
+        width: 200px;
+        opacity: .5;
+    }
+
+    .section-fifth{
+        margin: 0 0 4rem 0;
+    }
+
+    .btn-action{
+        padding: 1.3rem 1em;
+    }
+
+    .mapa-area{
+        padding: 2rem;
+    }
+
+    .content-area{
+        flex-direction: column;
+    }
+}
